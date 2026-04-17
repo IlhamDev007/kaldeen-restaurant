@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kaldeen Restaurant Menu</title>
+  <meta
+    name="description"
+    content="Explore the Kaldeen Restaurant menu in Kalmunai with breakfast, lunch, short eats, and customer favourites prepared fresh every day."
+  />
+  <meta
+    name="keywords"
+    content="Kaldeen Restaurant menu, breakfast Kalmunai, parotta Kalmunai, ulundhu vadai, dhosai, string hoppers, chicken biryani Kalmunai, rice and curry, short eats, tea and drinks"
+  />
+  <meta name="author" content="Kaldeen Restaurant" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kaldeenrestaurant.vercel.app/menu.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kaldeen Restaurant Menu | Fresh Food in Kalmunai" />
+  <meta
+    property="og:description"
+    content="See our breakfast, lunch, short eats, tea, and drink menu at Kaldeen Restaurant."
+  />
+  <meta property="og:url" content="https://kaldeenrestaurant.vercel.app/menu.html" />
+  <meta property="og:image" content="assets/images/chicken-biryani.jpg" />
+  <meta property="og:locale" content="en_LK" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaldeen Restaurant Menu" />
+  <meta
+    name="twitter:description"
+    content="Fresh breakfast, lunch, short eats, tea, and drinks in Kalmunai."
+  />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Restaurant + Menu schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Kaldeen Restaurant",
+    "url": "https://kaldeenrestaurant.vercel.app/menu.html",
+    "telephone": "+94672220387",
+    "servesCuisine": ["Sri Lankan", "Breakfast", "Lunch", "Short Eats"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Amman Kovil Road",
+      "addressLocality": "Kalmunai",
+      "postalCode": "32300",
+      "addressRegion": "Eastern Province",
+      "addressCountry": "LK"
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Kaldeen Restaurant Menu",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Breakfast",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Parotta" },
+            { "@type": "MenuItem", "name": "Ulundhu Vadai" },
+            { "@type": "MenuItem", "name": "Dhosai" },
+            { "@type": "MenuItem", "name": "String Hoppers" }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Lunch",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Chicken Biryani" },
+            { "@type": "MenuItem", "name": "Rice and Curry" }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Short Eats",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Rolls and Cutlet" },
+            { "@type": "MenuItem", "name": "Samosas" }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Tea and Drinks",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Tea and Drinks" }
+          ]
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Kaldeen Restaurant Home">
+        <div class="nav-logo" aria-hidden="true">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-name">Kaldeen Restaurant</span>
+          <span class="brand-tagline">Fresh &amp; Tasty Every Day</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a
+          href="https://wa.me/+94757181903"
+          class="nav-cta"
+          target="_blank"
+          rel="noopener"
+          aria-label="Order on WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Order Now
+        </a>
+      </nav>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle Menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        type="button"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="menu.html" class="mobile-link active">Menu</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+      <a
+        href="https://wa.me/+94757181903"
+        class="mobile-link whatsapp-mobile"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fa-brands fa-whatsapp"></i> Order Now
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Menu Hero -->
+    <section class="page-hero page-hero-menu" aria-label="Kaldeen Restaurant Menu Header">
+      <div class="container">
+        <div class="page-hero-panel" data-animate>
+          <div class="page-hero-deco page-hero-deco-1"></div>
+          <div class="page-hero-deco page-hero-deco-2"></div>
+
+          <div class="page-hero-content">
+            <h1 class="page-hero-title">Our Menu</h1>
+            <p class="page-hero-desc">
+              Explore fresh breakfast, lunch, tea, and short eats available at Kaldeen Restaurant in Kalmunai.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Toolbar -->
+    <section class="menu-toolbar-section">
+      <div class="container">
+        <div class="menu-toolbar" data-animate data-delay="80">
+          <div class="menu-filters" role="tablist" aria-label="Filter Menu Categories">
+            <button class="filter-btn active" type="button" data-menu-filter="all">All Items</button>
+            <button class="filter-btn" type="button" data-menu-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" type="button" data-menu-filter="lunch">Lunch</button>
+            <button class="filter-btn" type="button" data-menu-filter="short-eats">Short Eats</button>
+            <button class="filter-btn" type="button" data-menu-filter="drinks">Tea & Drinks</button>
+          </div>
+
+          <div class="menu-search-wrap">
+            <label for="menuSearch" class="sr-only">Search menu items</label>
+            <input
+              id="menuSearch"
+              class="menu-search"
+              type="search"
+              placeholder="Search menu items..."
+              data-menu-search
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Grid -->
+    <section class="section menu-section" id="menu-list" aria-label="Restaurant Menu Items">
+      <div class="container">
+        <div class="menu-grid" id="menuGrid">
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="0"
+            data-category="breakfast"
+            data-search="parotta breakfast roti flatbread"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/parotta.webp"
+                alt="Parotta served at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip">Breakfast</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Parotta</h2>
+              <p class="menu-card-text">
+                Soft and layered parotta prepared fresh and served hot for breakfast or evening meals.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="80"
+            data-category="breakfast"
+            data-search="ulundhu vadai lentil donut fried breakfast"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/kaldeen-ulundhu-vadai-kalmunai.webp"
+                alt="Ulundhu Vadai at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip">Breakfast</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Ulundhu Vadai</h2>
+              <p class="menu-card-text">
+                Crispy deep-fried lentil donuts, one of the restaurant’s signature favorites and a local breakfast staple.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="160"
+            data-category="breakfast"
+            data-search="dhosai dosa crepe breakfast"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/dhosai.webp"
+                alt="Dhosai at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip">Breakfast</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Dhosai</h2>
+              <p class="menu-card-text">
+                Thin rice and lentil crepes, cooked fresh and served as a classic breakfast item in the region.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="0"
+            data-category="breakfast"
+            data-search="string hoppers idiyappam breakfast rice noodles"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/Idiyappam.webp"
+                alt="String Hoppers or Idiyappam at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip">Breakfast</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">String Hoppers (Idiyappam)</h2>
+              <p class="menu-card-text">
+                Steamed rice noodle nests served with local curries, light, fresh, and ideal for breakfast.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="80"
+            data-category="lunch"
+            data-search="chicken biryani lunch yellow rice egg"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/kaldeen-chicken-biryani-kalmunai.webp"
+                alt="Chicken Biryani at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip menu-chip-lunch">Lunch</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Chicken Biryani</h2>
+              <p class="menu-card-text">
+                A highly-rated lunch pack with yellow rice, a chicken piece, and a boiled egg for a filling meal.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="160"
+            data-category="lunch"
+            data-search="rice curry beef chicken fish lunch"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/kaldeen-rice-and-curry-kalmunai.webp"
+                alt="Rice and Curry at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip menu-chip-lunch">Lunch</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Rice &amp; Curry</h2>
+              <p class="menu-card-text">
+                A full Sri Lankan meal with steamed rice and your choice of beef, chicken, or fish curry.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="0"
+            data-category="short-eats"
+            data-search="rolls cutlet short eats snacks"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/rolls-cutlet.webp"
+                alt="Rolls and Cutlet at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip menu-chip-short">Short Eats</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Rolls and Cutlet</h2>
+              <p class="menu-card-text">
+                Popular short eats prepared for quick bites, tea-time snacks, and fast, tasty eating.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="80"
+            data-category="short-eats"
+            data-search="samosas samosa short eats snack"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/samosas.webp"
+                alt="Samosas at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip menu-chip-short">Short Eats</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Samosas</h2>
+              <p class="menu-card-text">
+                Crispy samosas with a savory filling, perfect as a quick snack during the day.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="menu-card"
+            data-animate
+            data-delay="160"
+            data-category="drinks"
+            data-search="tea drinks milk tea plain tea coffee cool drinks"
+          >
+            <div class="menu-card-media">
+              <img
+                src="assets/images/tea.webp"
+                alt="Tea and drinks at Kaldeen Restaurant"
+                loading="lazy"
+                width="600"
+                height="420"
+              />
+              <span class="menu-chip menu-chip-drinks">Tea &amp; Drinks</span>
+            </div>
+            <div class="menu-card-body">
+              <h2 class="menu-card-title">Tea and Drinks</h2>
+              <p class="menu-card-text">
+                Milk tea, plain tea, coffee, and cool drinks available throughout the day.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-bottom-note" data-animate data-delay="220">
+          <div class="menu-note-card">
+            <h3>Fresh food prepared every day</h3>
+            <p>
+              Visit Kaldeen Restaurant in Kalmunai for breakfast, lunch, and short eats, or place your order through WhatsApp for quick service.
+            </p>
+            <a href="https://wa.me/+94757181903" target="_blank" rel="noopener" class="btn btn-menu-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <div class="footer-logo"><i class="fa-solid fa-utensils"></i></div>
+            <span>Kaldeen Restaurant</span>
+          </div>
+          <p class="footer-about">
+            Fresh breakfast, hearty lunch, and crispy short eats in Kalmunai, Sri Lanka. Cooked fresh daily.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94672220387">+94 672 220 387</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+94757181903" target="_blank" rel="noopener">+94 757 181 903</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Location &amp; Hours</h4>
+          <ul class="footer-list">
+            <li><i class="fa-solid fa-location-dot"></i> Near Amman Kovil Road, Kalmunai 32300</li>
+            <li><i class="fa-solid fa-clock"></i> Open Daily: 6:30 AM – 6:30 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Kaldeen Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaldeenrestaurant.vercel.app/sitemap.xml
